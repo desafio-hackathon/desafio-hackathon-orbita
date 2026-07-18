@@ -1,16 +1,27 @@
 {
-  "name": "server",
-  "private": true,
-  "version": "0.0.1",
-  "type": "commonjs",
-  "main": "src/index.js",
+  "name": "desafio-hackathon-orbita",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
   "scripts": {
-    "start": "node src/index.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/desafio-hackathon/desafio-hackathon-orbita.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/desafio-hackathon/desafio-hackathon-orbita/issues"
+  },
+  "homepage": "https://github.com/desafio-hackathon/desafio-hackathon-orbita#readme",
   "dependencies": {
-    "express": "^4.19.2",
-    "better-sqlite3": "^11.3.0",
-    "cors": "^2.8.5",
-    "dotenv": "^16.4.5"
+    "@supabase/supabase-js": "^2.110.7",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "nodemon": "^3.1.14"
   }
 }
