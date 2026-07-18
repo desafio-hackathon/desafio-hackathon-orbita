@@ -1,0 +1,90 @@
+{
+  "checkin_diario": {
+    "escala": { "min": 1, "max": 10 },
+    "formula_score": "media_das_5_notas * 10 (resultado de 0 a 100)",
+    "perguntas": [
+      {
+        "id": "agua",
+        "pergunta": "Quantos litros de água você bebeu hoje?",
+        "direcao_score": "normal",
+        "opcoes": [
+          { "nota": 1, "valor": "200ml" },
+          { "nota": 2, "valor": "400ml" },
+          { "nota": 3, "valor": "600ml" },
+          { "nota": 4, "valor": "800ml" },
+          { "nota": 5, "valor": "1 litro" },
+          { "nota": 6, "valor": "1,2 litros" },
+          { "nota": 7, "valor": "1,4 litros" },
+          { "nota": 8, "valor": "1,6 litros" },
+          { "nota": 9, "valor": "1,8 litros" },
+          { "nota": 10, "valor": "2 litros ou mais" }
+        ]
+      },
+      {
+        "id": "sono",
+        "pergunta": "Quantas horas você dormiu essa noite?",
+        "direcao_score": "normal",
+        "opcoes": [
+          { "nota": 1, "valor": "0-1h" },
+          { "nota": 2, "valor": "1-2h" },
+          { "nota": 3, "valor": "2-3h" },
+          { "nota": 4, "valor": "3-4h" },
+          { "nota": 5, "valor": "4-5h" },
+          { "nota": 6, "valor": "5-6h" },
+          { "nota": 7, "valor": "6-7h" },
+          { "nota": 8, "valor": "7-8h" },
+          { "nota": 9, "valor": "8-9h" },
+          { "nota": 10, "valor": "9h ou mais" }
+        ]
+      },
+      {
+        "id": "exercicio",
+        "pergunta": "Quantos minutos de atividade física você fez hoje?",
+        "direcao_score": "normal",
+        "opcoes": [
+          { "nota": 1, "valor": "0-5min" },
+          { "nota": 2, "valor": "5-10min" },
+          { "nota": 3, "valor": "10-15min" },
+          { "nota": 4, "valor": "15-20min" },
+          { "nota": 5, "valor": "20-25min" },
+          { "nota": 6, "valor": "25-30min" },
+          { "nota": 7, "valor": "30-35min" },
+          { "nota": 8, "valor": "35-45min" },
+          { "nota": 9, "valor": "45-60min" },
+          { "nota": 10, "valor": "60min ou mais" }
+        ]
+      },
+      {
+        "id": "alimentacao",
+        "pergunta": "Como você avalia sua alimentação hoje?",
+        "direcao_score": "normal",
+        "opcoes": [
+          { "nota": 1, "valor": "Muito desequilibrada (só ultraprocessado/fast food)" },
+          { "nota": 2, "valor": "Muito desequilibrada (só ultraprocessado/fast food)" },
+          { "nota": 3, "valor": "Fraca, quase sem fruta/verdura" },
+          { "nota": 4, "valor": "Fraca, quase sem fruta/verdura" },
+          { "nota": 5, "valor": "Ok, com algumas refeições balanceadas" },
+          { "nota": 6, "valor": "Ok, com algumas refeições balanceadas" },
+          { "nota": 7, "valor": "Boa, maioria das refeições com fruta/verdura" },
+          { "nota": 8, "valor": "Boa, maioria das refeições com fruta/verdura" },
+          { "nota": 9, "valor": "Impecável, todas as refeições balanceadas" },
+          { "nota": 10, "valor": "Impecável, todas as refeições balanceadas" }
+        ]
+      },
+      {
+        "id": "acucares_gorduras",
+        "pergunta": "Quantas vezes você comeu doces, frituras ou fast-food hoje?",
+        "direcao_score": "invertida",
+        "observacao": "Nota alta = comeu menos vezes. Mantém a lógica de nota 10 = melhor comportamento em todas as categorias.",
+        "opcoes": [
+          { "nota": 10, "valor": "0 vezes" },
+          { "nota": 8, "valor": "1 vez" },
+          { "nota": 6, "valor": "2 vezes" },
+          { "nota": 4, "valor": "3 vezes" },
+          { "nota": 2, "valor": "4 vezes" },
+          { "nota": 1, "valor": "5 vezes ou mais" }
+        ]
+      }
+    ]
+  }
+}
